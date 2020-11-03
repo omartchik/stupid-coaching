@@ -1,0 +1,11 @@
+<h1 class="question"><%= @title %></h1>
+<% @questions.each do |question| %>
+  <ol>
+    <li><%= question %></li>
+  </ol>
+<% end %>
+<form action="/rien" method="get">
+  <input type="text" name="name" placeholder="type name">
+  <input type="submit">
+</form>
+<%= link_to "retour à la page Home", root_path %>
